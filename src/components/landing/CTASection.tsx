@@ -115,7 +115,7 @@ export const CTASection = () => {
 
           {/* Trust points */}
           <div className="cta-animate flex flex-wrap justify-center gap-6 mb-10">
-            {['Basic forever plan', 'No credit card required', 'Setup in 5 minutes'].map((item, i) => (
+            {['1 month free plan', 'No extra verifications required', 'Setup in 5 minutes'].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center">
                   <Check className="h-3 w-3 text-primary" />
