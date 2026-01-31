@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* StockLive Design System
+   Primary: #B7F000 (Green) - HSL: 73 100% 47%
+   Background: #F9FAFB (Light Gray) - HSL: 210 17% 98%
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 17% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 73 100% 47%;
+    --primary-foreground: 220 20% 15%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 73 100% 47%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 73 100% 47%;
+
+    --radius: 0.75rem;
+
+    /* Custom brand tokens */
+    --StockLive-green: 73 100% 47%;
+    --StockLive-green-dark: 73 100% 40%;
+    --StockLive-navy: 220 40% 20%;
+    --StockLive-gray: 220 10% 46%;
+    --StockLive-light: 210 17% 98%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 73 100% 47%;
+    --sidebar-primary-foreground: 220 20% 15%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 73 100% 47%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 73 100% 47%;
+    --primary-foreground: 220 20% 15%;
+
+    --secondary: 220 20% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 73 100% 47%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 17%;
+    --input: 220 20% 17%;
+    --ring: 73 100% 47%;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 73 100% 47%;
+    --sidebar-primary-foreground: 220 20% 15%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 220 20% 17%;
+    --sidebar-ring: 73 100% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-green-500 bg-clip-text text-transparent;
+  }
+}
