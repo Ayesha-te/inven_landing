@@ -6,7 +6,6 @@ import StockLiveLogo from '@/assets/stockive-logo.png';
 
 const APP_URL = "https://inventory-wzsj.vercel.app";
 
-const APP_URL = "http://localhost:5173"; // Change this to your actual app URL
 
 
 const navLinks = [
