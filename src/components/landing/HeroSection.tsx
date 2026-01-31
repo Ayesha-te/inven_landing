@@ -6,11 +6,10 @@ import { ArrowRight, Play, Package, TrendingUp, Bell, Sparkles } from 'lucide-re
 
 gsap.registerPlugin(ScrollTrigger);
 
-<<<<<<< HEAD
+
 const APP_URL = "https://inventory-wzsj.vercel.app";
-=======
-const APP_URL = "http://localhost:5173"; // Change this to your actual app URL
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
+
 
 export const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -139,11 +138,9 @@ export const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25 gap-2 h-14 px-8 text-base"
-<<<<<<< HEAD
+
                 onClick={() => window.location.href = `${APP_URL}/?mode=signup&plan=BASIC`}
-=======
-                onClick={() => window.location.href = `${APP_URL}/auth?mode=signup&plan=BASIC`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
               >
                 Get Started Free
                 <ArrowRight className="h-5 w-5" />

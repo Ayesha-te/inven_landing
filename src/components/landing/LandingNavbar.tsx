@@ -3,11 +3,11 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import StockLiveLogo from '@/assets/stockive-logo.png';
 
-<<<<<<< HEAD
+
 const APP_URL = "https://inventory-wzsj.vercel.app";
-=======
+
 const APP_URL = "http://localhost:5173"; // Change this to your actual app URL
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
 
 const navLinks = [
   { label: 'Features', href: '#features' },
@@ -64,22 +64,18 @@ export const LandingNavbar = () => {
               variant="ghost" 
               size="sm" 
               className="font-medium"
-<<<<<<< HEAD
+
               onClick={() => window.location.href = `${APP_URL}/?mode=login`}
-=======
-              onClick={() => window.location.href = `${APP_URL}/auth?mode=login`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
             >
               Log in
             </Button>
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
-<<<<<<< HEAD
+
               onClick={() => window.location.href = `${APP_URL}/?mode=signup&plan=BASIC`}
-=======
-              onClick={() => window.location.href = `${APP_URL}/auth?mode=signup&plan=BASIC`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
             >
               Get Started Free
             </Button>
@@ -115,22 +111,18 @@ export const LandingNavbar = () => {
                   variant="ghost" 
                   size="sm" 
                   className="justify-start"
-<<<<<<< HEAD
+
                   onClick={() => window.location.href = `${APP_URL}/?mode=login`}
-=======
-                  onClick={() => window.location.href = `${APP_URL}/auth?mode=login`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
                 >
                   Log in
                 </Button>
                 <Button 
                   size="sm" 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground"
-<<<<<<< HEAD
+
                   onClick={() => window.location.href = `${APP_URL}/?mode=signup&plan=BASIC`}
-=======
-                  onClick={() => window.location.href = `${APP_URL}/auth?mode=signup&plan=BASIC`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
                 >
                   Get Started Free
                 </Button>

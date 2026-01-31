@@ -7,24 +7,19 @@ import { cn } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
-<<<<<<< HEAD
+
 const APP_URL = "https://inventory-wzsj.vercel.app";
-=======
-const APP_URL = "http://localhost:5173"; // Change this to your actual app URL
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
 
 const plans = [
   {
     name: 'Basic',
-<<<<<<< HEAD
+
     price: '$9',
     period: '/month',
     description: 'For small shops getting started',
-=======
-    price: '$0',
-    period: 'forever',
-    description: 'Perfect for getting started',
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
+
     features: [
       '1 Store',
       'Core inventory management',
@@ -39,13 +34,11 @@ const plans = [
     planValue: 'BASIC',
   },
   {
-<<<<<<< HEAD
+
     name: 'Starter',
     price: '$19',
-=======
-    name: 'Standard',
-    price: '$29',
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
+
     period: '/month',
     description: 'For growing businesses',
     features: [
@@ -61,19 +54,13 @@ const plans = [
     highlighted: true,
     badge: 'Most Popular',
     icon: Sparkles,
-<<<<<<< HEAD
+
     planValue: 'STARTER',
   },
   {
     name: 'Pro',
     price: '$39',
-=======
-    planValue: 'STANDARD',
-  },
-  {
-    name: 'Other',
-    price: '$79',
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
     period: '/month',
     description: 'For serious operations',
     features: [
@@ -88,11 +75,8 @@ const plans = [
     cta: 'Start Free Trial',
     highlighted: false,
     icon: Zap,
-<<<<<<< HEAD
-    planValue: 'PRO',
-=======
-    planValue: 'OTHER',
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
+
   },
 ];
 
@@ -231,11 +215,9 @@ export const PricingSection = () => {
               </ul>
 
               <Button
-<<<<<<< HEAD
+
                 onClick={() => window.location.href = `${APP_URL}/?mode=signup&plan=${plan.planValue}`}
-=======
-                onClick={() => window.location.href = `${APP_URL}/auth?plan=${plan.planValue}`}
->>>>>>> d1a2b457d616c106772da36791eb71ebc64047df
+
                 className={cn(
                   "w-full h-12 text-base font-semibold transition-all duration-300",
                   plan.highlighted
